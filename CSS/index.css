@@ -1,0 +1,225 @@
+:root{
+    --color-principal: #d97b00;
+    --color-secundario: #ddd;
+    --color-principal-hov: #a8460b;
+}
+/*---------------------------Intro----------------------------------*/
+.intro_container{
+    width: 98.8vw;
+    height: 60vh;
+}
+.intro_container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+/*---------------------------Teacher--------------------------------*/
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.container .main_index{
+    display: flex;
+    background-color: #eee;
+    width: 400px;
+    height: 250px;
+    margin: 50px auto;
+    box-shadow: 1px 1px 10px 0 #222;
+    border-radius: 15px;
+}
+
+.main_index img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.main_index p{
+    
+    text-align: left;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 20px 5px 10px 10px;
+    overflow: auto;
+
+}
+/*---------------------------User_profile--------------------------------*/
+.user_profile{
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+    align-self: center;
+}
+.user_profile img{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+/*---------------------------Index-estudiante------------------------------*/
+.title{
+    text-align: center;
+}
+.clase{
+    width: 80%;
+    height: 500px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    justify-content: center;
+}
+.clase::-webkit-scrollbar{
+    width: 5px;
+    background-color: #ccc;
+}
+
+.clase::-webkit-scrollbar-thumb{
+    background-color: var(--color-principal);
+    border-radius: 10px;
+}
+.clase .presentacion{
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    background-color: #fff;
+    transition: .3s transform;
+    border-radius: 15px;
+    overflow: auto;
+}
+.clase .presentacion::-webkit-scrollbar{
+    width: 3px;
+}
+.clase .presentacion:hover{
+    transform: scale(1.1);
+}
+
+.presentacion img{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.presentacion p{
+    text-align: justify;
+    margin: 10px;
+}
+/*------------------------------------------Clase---------------------------------*/
+.video{
+    margin: auto;
+
+}
+.caja-comentario{
+    background-color: #fff;
+    width: 640px;
+    height: 250px;
+    overflow-y: auto;
+    margin: 10px 0;
+    border-radius: 10px;
+    overflow: auto;
+}
+.caja-comentario::-webkit-scrollbar{
+    width: 7px;
+    background-color: #ccc;
+}
+.caja-comentario::-webkit-scrollbar-thumb{
+    width: 7px;
+    background-color: var(--color-principal);
+}
+.caja-comentario p{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+.text input{
+    margin: 10px 0;
+    width: 620px;
+    padding: 10px;
+    border: none;
+    border-bottom: var(--color-principal);
+    position: relative;
+}
+.text button{
+    padding: 7px;
+    border: none;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.text button:hover{
+    color: #fff;
+    background-color: var(--color-principal);
+}
+/*------------------------------------Drag Documents-----------------------------------*/
+
+.general-container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    min-height: 500px;
+    margin: 20px 0;
+}
+
+::section{
+    color: #fff;
+    background: #383f52;
+}
+
+.general{
+    width: 430px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.05);
+}
+
+.general header{
+    color: #6990f2;
+    font-size: 27px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.general form{
+    height: 167px;
+    display: flex;
+    cursor: pointer;
+    margin: 30px 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 2px dashed #6990f2;
+}
+
+#area-progreso{
+    display: none;
+    font-size: 16px;
+    color: #6990f2;
+    justify-content: center;
+}
+form:where(i,p){
+    color: #6990f2;
+}
+form i{
+    font-size: 50px;
+}
+form p{
+    margin-top: 15px;
+    font-size: 16px;
+}
+section .row i{
+    color: #6990f2;
+    font-size: 30px;
+}
+.section .detalles span{
+    font-size: 14px;
+}
+.area-subida{
+    max-height: 232px;
+    overflow-y: scroll;
+}
