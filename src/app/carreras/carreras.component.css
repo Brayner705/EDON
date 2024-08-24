@@ -1,0 +1,83 @@
+.contenedor{
+    width: 500px;
+    height: 200px;
+    background-color: #ADCAF1;
+    margin: 15px;
+    border-radius: 7px;
+}
+.contenedor-descripcion{
+    display: flex;
+    gap: 17px;
+    padding: 7px;
+}
+.first{
+    width: 65%;
+    max-height: 80px;
+    overflow: auto;
+    background-color: #fff;
+    border-radius: 7px;
+}
+.first::-webkit-scrollbar{
+    width: 5px;
+}
+.first::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 7px;
+}
+
+p{
+    padding: 5px;
+}
+img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    object-position: calc(top - 5px);
+}
+.logo-Universidad{
+    border-radius: 100%;
+    width: 30px;
+}
+
+/* Segundo elemento */
+.second{
+    display: flex;
+    height: 100%;
+    width: 30%;
+    flex-grow: 2;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.logo-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.botones{
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+button{
+    border: none;
+    padding: 7px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: .3s box-shadow;
+}
+button:first-child{
+    background-color: #274398;
+    color: #fff;
+}
+button:first-child:hover{
+    box-shadow: 0 0 15px #274398;
+}
+button:last-child:hover{
+    box-shadow: 0 0 20px #ddd;
+}
