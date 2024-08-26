@@ -1,0 +1,6 @@
+
+.contenedor_carrera{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

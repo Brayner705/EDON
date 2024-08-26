@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {MenuNavegacionComponent} from './menu-navegacion/menu-navegacion.component';
 import {CarrerasComponent} from './carreras/carreras.component'
@@ -12,4 +12,11 @@ import {CarrerasComponent} from './carreras/carreras.component'
 })
 export class AppComponent {
   title = 'EDON';
+
+  imagePath(path:string){
+    return path;
+  }
+  logoPath(path:string){
+    return path;
+  }
 }
