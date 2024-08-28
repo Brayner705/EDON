@@ -1,8 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --color-principal : #FF914D;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 app-root{
     display: flex;
