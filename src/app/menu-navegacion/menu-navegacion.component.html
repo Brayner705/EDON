@@ -1,13 +1,12 @@
 <section>
-    <img src="assets/EDON.png" alt="Logo">
+  <img src="assets/EDON.png" alt="Logo" />
   <form action="">
-    <input type="text" placeholder="Busca una carrera">
+    <input type="text" placeholder="Busca una carrera" />
     <i class="bi bi-search"></i>
   </form>
 
-    <div>
-      <button>Iniciar Sesion</button>
-      <button>Registrarse</button>
-    </div>
- 
+  <div>
+    <button [routerLink]="['inicio-sesion']">Iniciar Sesion</button>
+    <button [routerLink]="['registro']">Registrarse</button>
+  </div>
 </section>

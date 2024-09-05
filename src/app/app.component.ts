@@ -1,22 +1,14 @@
-import { Component, Input, input } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import {MenuNavegacionComponent} from './menu-navegacion/menu-navegacion.component';
-import {CarrerasComponent} from './carreras/carreras.component'
+import { Component} from '@angular/core';
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { MenuNavegacionComponent } from './menu-navegacion/menu-navegacion.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MenuNavegacionComponent, CarrerasComponent],
+  imports: [RouterOutlet, RouterLink, MenuNavegacionComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'EDON';
-
-  imagePath(path:string){
-    return path;
-  }
-  logoPath(path:string){
-    return path;
-  }
 }

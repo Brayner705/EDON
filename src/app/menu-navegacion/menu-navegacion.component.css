@@ -56,6 +56,7 @@ button:last-child{
   color: #fff;
 }
 
+
 @media screen and (max-width: 950px) {
   section{
     padding: 1rem;

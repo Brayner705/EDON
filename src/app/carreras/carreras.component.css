@@ -88,6 +88,7 @@ button:last-child:hover{
     box-shadow: 0 0 20px #ddd;
 }
 
+
 @media screen and (max-width : 700px) { 
     .contenedor{
         width: 270px;
