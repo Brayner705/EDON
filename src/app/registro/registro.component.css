@@ -70,6 +70,11 @@ form{
     flex-direction: column;
     align-items: center;
 }
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+
+}
 .btnRegistrarme{
     padding: 15px;
     font-size: 16px;
