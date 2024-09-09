@@ -12,6 +12,7 @@ section{
 }   
 img{
     width: 5.3rem;
+    cursor: pointer;
 }
 form{
     flex-grow: .8;
